@@ -289,24 +289,21 @@ img {
 
 .working__title {
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
 }
 
-.working-list {
+.service-list {
   display: flex;
 }
 
-.working-item {
+.service-list__item {
   position: relative;
 }
 
-.working-item:not(:last-child) {
+.service-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.working-img-text {
+.service-list__text {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -328,29 +325,30 @@ img {
   background-color: var(--secondary-background-color);
 }
 
-.team .title {
+.team__title {
   margin-bottom: 50px;
 }
-.team-list {
+
+.grid {
   display: flex;
 }
 
-.team-item {
+.grid__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-item:not(:last-child) {
+.grid__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-content {
+.team-member {
   padding: 30px 32px;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-white-color);
 }
 
-.team-item-title {
+.team-member__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -358,7 +356,7 @@ img {
   text-align: center;
 }
 
-.team-item-text {
+.team-member__text {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
@@ -366,16 +364,16 @@ img {
   color: var(--primary-text-color);
 }
 
-.icon-list {
+.social-list {
   display: flex;
   align-items: center;
 }
 
-.icon-item:not(:last-child) {
+.social-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.icon-link {
+.social-list__link {
   display: block;
   width: 44px;
   height: 44px;
@@ -386,15 +384,15 @@ img {
     background-color var(--duration) var(--timing-function);
 }
 
-.icon-link:hover,
-.icon-link:focus {
+.social-list__link:hover,
+.social-list__link:focus {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
 /* ---------------------CLIENTS--------------------- */
 
-.clients .title {
+.clients__title {
   margin-bottom: 50px;
 }
 
@@ -403,11 +401,11 @@ img {
   align-items: center;
 }
 
-.clients-item:not(:last-child) {
+.clients-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-link {
+.clients-list__link {
   display: block;
   width: 170px;
   height: 92px;
@@ -419,8 +417,8 @@ img {
     border var(--duration) var(--timing-function);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
