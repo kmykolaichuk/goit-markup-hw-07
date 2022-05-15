@@ -314,7 +314,7 @@ img {
   margin-bottom: 10px;
 }
 
-.modal__label {
+.field__label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -323,11 +323,11 @@ img {
   color: var(--primary-text-color);
 }
 
-.modal__input-wrap {
+.field__wrap {
   position: relative;
 }
 
-.modal__input {
+.field__input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -337,12 +337,12 @@ img {
   transition: border-color var(--timing-function) var(--duration);
 }
 
-.modal__input:focus,
-.modal__input:hover {
+.field__input:focus,
+.field__input:hover {
   border-color: var(--accent-color);
 }
 
-.modal__icon {
+.field__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -350,16 +350,16 @@ img {
   transition: fill var(--timing-function) var(--duration);
 }
 
-.modal__input:focus + .modal__icon,
-.modal__input:hover + .modal__icon {
+.field__input:focus + .field__icon,
+.field__input:hover + .field__icon {
   fill: var(--accent-color);
 }
 
-.modal__field-text {
+.modal__field--bottom {
   margin-bottom: 20px;
 }
 
-.modal__text {
+.field__text {
   display: block;
   width: 100%;
   height: 120px;
@@ -375,16 +375,16 @@ img {
   transition: border-color var(--timing-function) var(--duration);
 }
 
-.modal__text:focus,
-.modal__text:hover {
+.field__text:focus,
+.field__text:hover {
   border-color: var(--accent-color);
 }
 
-.modal__text::placeholder {
+.field__text::placeholder {
   color: var(--modal-text-color);
 }
 
-.modal__check-text {
+.input-check__text {
   position: relative;
   display: flex;
   align-items: center;
@@ -394,15 +394,15 @@ img {
   color: var(--primary-text-color);
 }
 
-.modal__check-link {
+.input-check__link {
   color: var(--accent-color);
 }
 
-.modal__check-icon {
+.input-check__icon {
   fill: transparent;
 }
 
-.modal__check-text span {
+.input-check__text span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,16 +413,16 @@ img {
   border-radius: 2px;
 }
 
-.modal__input-check:checked + .modal__check-text span {
+.input-check:checked + .input-check__text span {
   background-color: var(--accent-color);
   border: transparent;
 }
 
-.modal__input-check:focus + .modal__check-text span {
+.input-check:focus + .input-check__text span {
   border-color: var(--accent-color);
 }
 
-.modal__input-check:checked + .modal__check-text .modal__check-icon {
+.input-check:checked + .input-check__text .input-check__icon {
   fill: var(--primary-white-color);
 }
 
